@@ -1,20 +1,19 @@
 import Header from './Header';
 import Footer from './Footer';
-import styles from './DefaultLayout.module.scss';
+import styles from './HeaderLayout.module.scss';
 import classNames from 'classnames/bind';
 
 const cx = classNames.bind(styles);
 
-function DefaultLayout({ children }) {
+function HeaderLayout({ children }) {
     return (
         <div className={cx('wrapper')}>
             <Header />
             <div className={cx('container')}>
                 <div className={cx('content')}>{children}</div>
-                <Footer />
             </div>
         </div>
     );
 }
 
-export default DefaultLayout;
+export default HeaderLayout;

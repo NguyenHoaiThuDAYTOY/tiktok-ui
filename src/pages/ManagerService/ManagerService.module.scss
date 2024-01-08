@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;600&family=Jost:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,400&family=Lora:wght@400;500;600;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+.container{
+    width: 100%;
+}
+
+.create-icon {
+    margin-left: 10px;
+    font-weight: 600;
+}
+
+.table {
+    text-align: center;
+    margin-left: 200px;
+    width: 80%;
+    border-radius: 5px;
+    // box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
+
+.content th {
+    padding: 30px;
+}
+
+.table td {
+    text-align: center;
+}
+
+.status {
+    width: 300px;
+}
+
+.action {
+    font-size: 16px;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+}
+
+.save {
+    color: #708dde;
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+.save:hover {
+    cursor: pointer;
+    color: #162b65 !important;
+    transform: scale(1.22);
+}
+
+.cancel {
+    color: rgb(228, 73, 73);
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+.cancel:hover {
+    cursor: pointer;
+    color: red;
+    transform: scale(1.22);
+}
+
+.edit-icon {
+    color: #26ba44;
+}
+
+.edit-icon:hover {
+    color: green;
+    cursor: pointer;
+    transform: scale(1.22);
+    transition: 0.5s;
+}
+
+.green {
+    color: #26ba44;
+    font-weight: 600;
+}
+
+.blue {
+    color: #708dde;
+    font-weight: 600;
+}
+
+.red {
+    color: red;
+    font-weight: 600;
+}
+
+.grey {
+    color: grey;
+    font-weight: 600;
+}
+
+.search-input {
+    margin-bottom: 8px;
+    display: block;
+}
+
+.search-btn, .search-reset {
+    width: 90px;
+    font-weight: 600;
+    border: none;
+    transition: 0.5s;
+}
+
+.search-btn {
+    background-image: linear-gradient(to right bottom, #8ed7f1, #708dde);
+    color: white;
+}
+
+.search-btn:hover {
+    opacity: 70%;
+    color: white !important;
+}
+
+.search-reset {
+    width: 90px;
+}
+
+.search-reset:hover {
+    background-image: linear-gradient(to right bottom, #8ed7f1, #708dde);
+    opacity: 50%;
+    color: white !important;
+}
+
+.search-filter, .search-close {
+    color: #708dde;
+    font-weight: 600;
+}
+
+.search-close:hover, .search-filter:hover {
+    color: #8ed7f1 !important;
+}
+
+li span:hover {
+    font-weight: 600;
+    transition: 0.3s;
+    transform: scale(1.04);
+}
+
+.add {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+.add-btn {
+    justify-content: center;
+    background-color: white;
+    border: none;
+    background: linear-gradient(to right bottom, #6a5af9, #2bf2ed);
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    padding: 10px 20px;
+    color: white;
+    font-weight: 500;
+}
+
+.add-btn:hover {
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    transition: 0.5s;
+    transform: scale(1.10);
+}

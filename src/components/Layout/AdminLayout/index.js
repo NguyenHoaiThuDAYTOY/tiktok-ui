@@ -1,20 +1,21 @@
 import Header from './Header';
-import Footer from './Footer';
-import styles from './DefaultLayout.module.scss';
+import TabMenu from './TabMenu';
+import styles from './AdminLayout.module.scss';
 import classNames from 'classnames/bind';
 
 const cx = classNames.bind(styles);
 
-function DefaultLayout({ children }) {
+function AdminLayout({ children }) {
     return (
         <div className={cx('wrapper')}>
             <Header />
+            <TabMenu />
             <div className={cx('container')}>
+                <div className={cx('tab-menu')}></div>
                 <div className={cx('content')}>{children}</div>
-                <Footer />
             </div>
         </div>
     );
 }
 
-export default DefaultLayout;
+export default AdminLayout;

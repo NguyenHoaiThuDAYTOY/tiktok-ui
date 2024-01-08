@@ -1,33 +1,30 @@
 import { Fragment } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { useNavigate, BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { publicRoutes } from '~/routes';
+import { privateRoutes } from '~/routes';
 import { DefaultLayout } from '~/components/Layout';
+import SignIn from './pages/SignIn';
 
 function App() {
     return (
         <Router>
             <div className="App">
                 <Routes>
-                    {publicRoutes.map((route, index) => {
+                    {
+                        privateRoutes.map((route, index) => {
+                            const Page = route.component;
+                            let Layout = route.Layout;
+                            if(Layout === null)
+                            return(<Route key={index} path={route.path} element={<Page />}/>);
+                            return(<Route key={index} path={route.path} element={<Layout><Page /></Layout>}/>);
+                        })  
+                    }
+                    {
+                        publicRoutes.map((route, index) => {
                         const Page = route.component;
-                        let Layout = DefaultLayout;
-                        if (route.layout) {
-                            Layout = route.layout;
-                        } else if (route.layout === null) {
-                            Layout = Fragment;
-                        }
-                        return (
-                            <Route
-                                key={index}
-                                path={route.path}
-                                element={
-                                    <Layout>
-                                        <Page />
-                                    </Layout>
-                                }
-                            />
-                        );
-                    })}
+                        return ( <Route key={index} path={route.path} element={<Page />}/> );
+                        })
+                    }
                 </Routes>
             </div>
         </Router>

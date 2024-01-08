@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;600&family=Jost:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,400&family=Lora:wght@400;500;600;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+.container{
+    height: 1000px;
+    width: 100%;
+}
+
+.content {
+    width: 100%;
+}
+
+.banner {
+    position: relative;
+}
+
+.banner-img {
+    width: 100%;
+}
+
+.btn-schedule {
+    position: absolute;
+    bottom: 190px;
+    left: 150px;
+    justify-content: center;
+    background-color: white;
+    border: none;
+    outline: none;
+    // border: 5px solid;
+    // border-image-slice: 1;
+    // border-image-source: linear-gradient(to right bottom, #6a5af9, #2bf2ed);
+    background-image: linear-gradient(to right bottom, #6a5af9, #2bf2ed);
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: white;
+    transition: 0.1s;
+    text-decoration: none;
+    align-items: center;
+    padding: 20px 30px;
+    transition: 0.3s;
+}
+
+.btn-schedule:hover {
+    box-shadow: rgba(46, 153, 240, 0.4) -5px 5px, rgba(46, 153, 240, 0.3) -10px 10px, rgba(46, 153, 240, 0.2) -15px 15px, rgba(46, 153, 240, 0.1) -20px 20px, rgba(46, 153, 240, 0.05) -25px 25px;
+    // box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
